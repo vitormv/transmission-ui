@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "baseUrl": "./src",
+        "esModuleInterop": true,
+        "jsx": "react",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "sourceMap": true,
+        "target": "es6",
+        "plugins": [
+            {
+                "name": "typescript-plugin-css-modules",
+                "options": {
+                    "customMatcher": "\\.scss$",
+                    "camelCase": true
+                }
+            }
+        ]
+    },
+    "include": [
+        "./src/**/*.ts",
+        "./src/**/*.tsx",
+        "./src/**/*.d.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "build",
+        "webpack",
+    ],
+    "awesomeTypescriptLoaderOptions": {
+        /* ... */
+    }
+}

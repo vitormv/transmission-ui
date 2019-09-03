@@ -1,0 +1,45 @@
+.container {
+}
+.list {
+  margin: 0;
+  padding: 0;
+  display: table;
+}
+
+.item,
+.listHeader {
+  display: table-row;
+  padding-bottom: 12px;
+
+  > * {
+    padding-left: 12px;
+    padding-bottom: 24px;
+    display: table-cell;
+
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+}
+
+.info {
+  color: #aaa;
+  padding-top: 6px;
+  font-size: 14px;
+
+  .status {
+  }
+
+  .eta {
+    padding-left: 12px;
+  }
+}
+.status {
+}
+
+.swarmTotal {
+  vertical-align: bottom;
+  font-size: 14px;
+  color: #aaa;
+  font-weight: 300;
+}

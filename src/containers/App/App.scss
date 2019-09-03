@@ -1,0 +1,17 @@
+.container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  font-size: 16px;
+}
+
+.sidebar {
+  background-color: #3e2d60;
+  color: white;
+}
+
+.content {
+  padding: 36px;
+  overflow: scroll;
+}
