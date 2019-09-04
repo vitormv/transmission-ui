@@ -22,6 +22,10 @@ module.exports = merge(baseConfig, {
     module: {
         rules: [
             {
+                test: /\.tsx?$/,
+                loader: 'awesome-typescript-loader',
+            },
+            {
                 test: /\.jsx?$/,
                 exclude: /node_modules/,
                 use: [
@@ -48,7 +52,7 @@ module.exports = merge(baseConfig, {
                 use: [
                     'style-loader',
                     {
-                        loader: 'typings-for-css-modules-loader',
+                        loader: 'css-loader',
                         options: {
                             modules: {
                                 localIdentName: '[name]__[local]___[hash:base64:5]',

@@ -4,7 +4,7 @@ import { render } from 'react-dom';
 import { App } from 'src/containers/App';
 import { getStore } from 'src/store';
 import 'ionicons';
-// import 'src/styles/main.scss';
+import 'src/styles/main.scss';
 
 const target = document.getElementById('js-main-app');
 

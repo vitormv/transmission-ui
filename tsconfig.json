@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "allowJs": true,
-        "baseUrl": "./src",
+        "baseUrl": ".",
         "esModuleInterop": true,
         "jsx": "react",
         "module": "commonjs",
@@ -10,6 +10,7 @@
         "removeComments": true,
         "sourceMap": true,
         "target": "es6",
+        "rootDir": ".",
         "plugins": [
             {
                 "name": "typescript-plugin-css-modules",
@@ -20,11 +21,6 @@
             }
         ]
     },
-    "include": [
-        "./src/**/*.ts",
-        "./src/**/*.tsx",
-        "./src/**/*.d.ts"
-    ],
     "exclude": [
         "node_modules",
         "build",

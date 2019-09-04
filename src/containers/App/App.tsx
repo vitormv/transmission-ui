@@ -1,6 +1,6 @@
 import React from 'react';
 import { Sidebar } from 'src/components/Sidebar';
-// import { TorrentList } from 'src/containers/TorrentList';
+import { TorrentList } from 'src/containers/TorrentList';
 import styles from './App.scss';
 
 const App = () => (
@@ -8,10 +8,9 @@ const App = () => (
         <aside className={styles.sidebar}>
             <Sidebar />
         </aside>
-        {/* <main className={styles.content}>
+        <main className={styles.content}>
             <TorrentList />
-        </main> */}
-        <p>TESTE</p>
+        </main>
     </div>
 );
 
