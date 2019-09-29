@@ -44,7 +44,7 @@ const defaultState = {
     ],
 };
 
-export default (state = defaultState, action) => {
+export default (state = defaultState, action: { type: any;}) => {
     switch (action.type) {
         case SAMPLE_ACTION:
             return {

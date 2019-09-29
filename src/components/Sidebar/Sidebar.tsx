@@ -2,7 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 import styles from './Sidebar.scss';
 
-interface Props {
+type Props = {
     active?: boolean,
     icon: string,
     label: string,

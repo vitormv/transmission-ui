@@ -1,15 +1,15 @@
 {
     "compilerOptions": {
-        "allowJs": true,
+        "allowJs": true, // Process & infer types from .js files.
         "baseUrl": ".",
-        "esModuleInterop": true,
+        "esModuleInterop": true, // Import non-ES modules as default imports.
         "jsx": "react",
         "module": "commonjs",
-        "moduleResolution": "node",
+        "moduleResolution": "node", // Search under node_modules for non-relative imports.
         "noImplicitAny": true,
         "removeComments": true,
         "sourceMap": true,
-        "target": "es6",
+        "target": "esnext",
         "rootDir": ".",
         "plugins": [
             {
@@ -24,9 +24,6 @@
     "exclude": [
         "node_modules",
         "build",
-        "webpack",
-    ],
-    "awesomeTypescriptLoaderOptions": {
-        /* ... */
-    }
+        "webpack"
+    ]
 }

@@ -6,7 +6,7 @@ exports.buildDirectory = 'build';
 exports.buildPath = path.join(exports.root, exports.buildDirectory);
 
 // entry files
-exports.jsEntry = path.join(exports.root, 'src', 'index.js');
+exports.jsEntry = path.join(exports.root, 'src', 'index.tsx');
 exports.htmlEntry = path.join(exports.root, 'src', 'index.html');
 
 // target files

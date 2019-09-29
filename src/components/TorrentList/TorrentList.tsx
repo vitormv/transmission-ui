@@ -1,10 +1,14 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import capitalize from 'lodash/capitalize';
 import { secondsToDurationString } from 'src/functions/date/secondsToDurationString';
 import styles from './TorrentList.scss';
+import { TorrentItem } from 'src/models/torrents';
 
-const TorrentList = ({ torrents }) => (
+type Props = {
+    torrents: TorrentItem[],
+};
+
+const TorrentList = ({ torrents }: Props) => (
     <div className={styles.container}>
         <ul className={styles.list}>
             <li className={styles.listHeader}>
@@ -52,9 +56,5 @@ const TorrentList = ({ torrents }) => (
         </ul>
     </div>
 );
-
-TorrentList.propTypes = {
-    torrents: PropTypes.arrayOf(PropTypes.shape({})).isRequired,
-};
 
 export { TorrentList };

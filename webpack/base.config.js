@@ -7,7 +7,6 @@ module.exports = {
     entry: config.jsEntry,
     resolve: {
         alias: {
-            src: path.resolve(__dirname, '../src/'),
             vendor: path.resolve(__dirname, '../node_modules/'),
         },
         extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],

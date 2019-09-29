@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sidebar } from 'src/components/Sidebar';
+import { Sidebar } from 'src/components/Sidebar/Sidebar';
 import { TorrentList } from 'src/containers/TorrentList';
 import styles from './App.scss';
 
